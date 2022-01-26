@@ -1,2 +1,2 @@
 # experimentVariousSolutions
-do experiments to integrate various solution to find  suitable technology  for specific scenario
+do experiments to integrate various solution to find better and suitable technology  for specific scenario

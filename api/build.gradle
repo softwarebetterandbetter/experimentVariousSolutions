@@ -1,0 +1,5 @@
+description = 'The server API for the application'
+
+dependencies {
+    implementation project(':shared')
+}

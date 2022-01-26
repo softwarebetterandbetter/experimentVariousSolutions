@@ -1,0 +1,37 @@
+subprojects {
+    apply plugin: 'java'
+	apply plugin: 'idea'
+	apply plugin: 'maven-publish'
+
+    repositories {
+       mavenCentral()
+    }
+
+    dependencies {
+		implementation 'commons-collections:commons-collections:3.2'
+		testImplementation 'junit:junit:4.0'
+	}
+
+    sourceCompatibility = 1.8
+	version = '1.0'
+
+    test {
+		systemProperties 'mysql': 'localhost'
+	}
+
+	publishing {
+		repositories {
+		   flatDir {
+			   dirs 'repos'
+		   }
+		}
+	}
+}
+
+
+
+
+
+
+
+
